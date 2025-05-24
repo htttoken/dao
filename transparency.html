@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTT DAO Transparency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/dao.htttoken.eth/assets/dao-logo.png" type="image/png">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow p-6">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <!-- Left: Logo and Title -->
+      <div class="flex items-center space-x-3">
+        <img src="htt-logo.png" alt="HTT Logo" class="w-10 h-10 object-contain">
+        <h1 class="text-2xl font-bold">HTT DAO</h1>
+      </div>
+
+      <!-- Right: Navigation -->
+      <nav class="space-x-4 text-sm">
+        <a href="index.html">Home</a>
+        <a href="governance.html">Governance</a>
+        <a href="proposals.html">Proposals</a>
+        <a href="transparency.html" class="underline">Transparency</a>
+        <a href="constitution.html">Constitution</a>
+        <a href="community.html">Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto p-6">
+    <section class="mb-10">
+      <h2 class="text-3xl font-bold mb-4 text-indigo-700">Transparency & Logs</h2>
+      <p class="text-lg mb-4">
+        This page records minting, burning, distribution events, and executed DAO decisions. Our goal is full visibility into how HTT tokens flow through the ecosystem.
+      </p>
+    </section>
+
+    <!-- Mint / Burn Log -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-semibold text-purple-700 mb-3">🔥 Mint & Burn History</h3>
+
+      <div class="overflow-x-auto">
+        <table class="w-full table-auto border text-sm">
+          <thead class="bg-gray-200 text-gray-700">
+            <tr>
+              <th class="p-2 text-left">Date</th>
+              <th class="p-2 text-left">Action</th>
+              <th class="p-2 text-left">Amount</th>
+              <th class="p-2 text-left">Tx / Ref</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <td class="p-2">2025-05-10</td>
+              <td class="p-2 text-green-600">Mint</td>
+              <td class="p-2">50,000 HTT</td>
+              <td class="p-2"><a href="#" class="text-blue-600 underline">View Tx</a></td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="p-2">2025-05-17</td>
+              <td class="p-2 text-red-600">Burn</td>
+              <td class="p-2">4,500 HTT</td>
+              <td class="p-2"><a href="#" class="text-blue-600 underline">BurnMonitor #001</a></td>
+            </tr>
+            <tr class="bg-white">
+              <td class="p-2">2025-05-18</td>
+              <td class="p-2 text-red-600">Burn</td>
+              <td class="p-2">1,000 HTT</td>
+              <td class="p-2"><a href="#" class="text-blue-600 underline">AutoBurn Policy</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Reward Distribution Summary -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-semibold text-pink-600 mb-3">💰 Reward Pool Distribution</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Traveler Affiliate Reward: 2 USD-equivalent (in HTT)</li>
+        <li>Vendor Affiliate Reward: 3 USD-equivalent (in HTT)</li>
+        <li>Total per transaction: 5 USD allocated in HTT</li>
+        <li>Platform Fee Retained: 1 USD (used or burned based on policy)</li>
+      </ul>
+      <p class="text-sm text-gray-600 mt-2">Note: HTT token is valued based on platform utility (e.g., booking services), not USDT market rate.</p>
+    </section>
+
+    <!-- Execution Log -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-3">📋 Executed DAO Proposals</h3>
+      <div class="space-y-4 text-sm">
+        <div class="bg-white border p-4 rounded">
+          <p><strong>#001:</strong> Set Burn Monitor into Wallet Dashboard</p>
+          <p class="text-green-600">Status: Executed – May 19, 2025</p>
+          <p>Admins completed integration. Monitor available at <a href="https://wallet.htttoken.eth" class="underline text-blue-600">wallet.htttoken.eth</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <a href="governance.html" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition">
+        Back to Governance →
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-50 text-center text-sm text-gray-500 py-4 border-t mt-10">
+    &copy; 2025 HTT DAO | <a href="https://htttoken.eth.limo" class="underline">htttoken.eth</a>
+  </footer>
+
+</body>
+</html>
